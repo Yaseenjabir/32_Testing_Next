@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 
-export function POST(req) {
-  return NextResponse.json("Hello world");
+export async function POST(req) {
+  const data = await req.json();
+
+  return NextResponse.json(data);
 }
