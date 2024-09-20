@@ -4,7 +4,7 @@ export default function Home() {
   const handleClick = async () => {
     const res = await fetch("api/testing", {
       method: "POST",
-      body: JSON.stringify({ name: "Muhammad", age: 40 }),
+      body: JSON.stringify({ name: "Yaseen", age: 20 }),
     });
     const data = await res.json();
     console.log(data);
